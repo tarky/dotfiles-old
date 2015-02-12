@@ -6,11 +6,11 @@ set guifont=Monaco:h18
    set nocompatible               " Be iMproved
 
    " Required:
-   set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
  endif
 
  " Required:
- call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
+ call neobundle#begin(expand('~/.vim/bundle/'))
 
  " Let NeoBundle manage NeoBundle
  " Required:
