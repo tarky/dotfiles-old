@@ -7,3 +7,4 @@
 *.swj
 .DS_Store
 tags
+.vim
