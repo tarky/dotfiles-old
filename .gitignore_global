@@ -1,1 +1,9 @@
-.vim
+*.swp
+*.swm
+*.swn
+*.swo
+*.swl
+*.swk
+*.swj
+.DS_Store
+tags

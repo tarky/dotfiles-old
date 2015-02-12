@@ -1,0 +1,18 @@
+[user]
+	name = tarky
+	email = taisuke.araki@gmail.com
+[credential]
+	helper = osxkeychain
+[color]
+	ui = auto
+[core]
+  excludesfile = ~/.gitignore_global
+[push]
+	default = simple
+[alias]
+	lg = log --oneline --decorate --all --graph
+	s = status -s
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
