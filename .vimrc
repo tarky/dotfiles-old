@@ -19,7 +19,7 @@ set guifont=Monaco:h18
  " My Bundles here:
  NeoBundle 'Shougo/unite.vim'
  NeoBundle 'basyura/unite-rails'
- NeoBundle 'Shougo/neosnippet.vim' 
+ NeoBundle 'Shougo/neosnippet.vim'
  NeoBundle 'Shougo/neocomplete.vim'
  NeoBundle 'tpope/vim-endwise'
  NeoBundle 'tpope/vim-rails'
@@ -48,7 +48,7 @@ set guifont=Monaco:h18
  " this will conveniently prompt you to install them.
  NeoBundleCheck
 
-filetype plugin indent on 
+filetype plugin indent on
 syntax on
 set number
 set ruler
@@ -76,3 +76,19 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+set foldmethod=syntax
+set foldlevel=99
+set tags=./tags;
+set grepprg=ack
+"for acn next and previous
+noremap <D-j> :cn<CR>
+noremap <D-k> :cp<CR>
+
+"for open close section
+nnoremap <Space> za
+augroup HighlightTrailingSpaces
+  autocmd!
+  autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
+  autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
+augroup END
