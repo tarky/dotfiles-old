@@ -7,6 +7,6 @@
 *.swj
 .DS_Store
 tags
-.vim/bundle/
+.vim
 !.vim/bundle/neobundle.vim
 !.vim/bundle/NeoBundle.lock
