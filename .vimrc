@@ -27,7 +27,7 @@ set guifont=Monaco:h18
  NeoBundle 'tpope/vim-dispatch'
  NeoBundle 'jgdavey/tslime.vim'
  NeoBundle 'thoughtbot/vim-rspec'
- "NeoBundle 'scrooloose/nerdtree'
+ NeoBundle 'scrooloose/nerdtree'
  NeoBundle "tyru/caw.vim.git"
  NeoBundle 'terryma/vim-multiple-cursors'
  NeoBundle 'Align'
@@ -36,6 +36,7 @@ set guifont=Monaco:h18
  NeoBundle 'tyru/open-browser.vim'
  NeoBundle 'slim-template/vim-slim'
  NeoBundle 'mileszs/ack.vim'
+ NeoBundle 'soramugi/auto-ctags.vim'
  " Refer to |:NeoBundle-examples|.
  " Note: You don't set neobundle setting in .gvimrc!
 
