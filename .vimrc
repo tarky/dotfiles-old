@@ -82,6 +82,9 @@ set foldmethod=syntax
 set foldlevel=99
 set tags=./tags;
 set grepprg=ack
+
+let g:ack_use_dispatch=1
+
 "for acn next and previous
 noremap <D-j> :cn<CR>
 noremap <D-k> :cp<CR>
