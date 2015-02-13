@@ -80,7 +80,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 set foldmethod=syntax
 set foldlevel=99
-set tags=./tags;
 
 let g:ackprg='ag --vimgrep'
 let g:ack_use_dispatch=1
