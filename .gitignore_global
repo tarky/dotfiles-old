@@ -10,3 +10,4 @@ tags
 .vim
 !.vim/bundle/neobundle.vim
 !.vim/bundle/NeoBundle.lock
+tmux-*-*.log
