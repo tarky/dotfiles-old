@@ -88,6 +88,34 @@ let g:ack_use_dispatch=1
 noremap <D-j> :cn<CR>
 noremap <D-k> :cp<CR>
 
+"for moving window
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+"for moving tabs
+map tn gt
+map tp gT
+map t1 1gt
+map t2 2gt
+map t3 3gt
+map t4 4gt
+map t5 5gt
+map t6 6gt
+map t7 7gt
+map t8 8gt
+map t9 9gt
+map t0 :tablast<CR>
+
+"for neocomplete
+let g:neocomplete#enable_at_startup = 1
+
+if !exists('g:neocomplete#force_omni_input_patterns')
+    let g:neocomplete#force_omni_input_patterns = {}
+endif
+let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+
 "for open close section
 nnoremap <Space> za
 augroup HighlightTrailingSpaces
