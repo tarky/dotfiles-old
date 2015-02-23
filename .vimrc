@@ -95,3 +95,25 @@ augroup HighlightTrailingSpaces
   autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
   autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
 augroup END
+
+let g:rails_projections = {
+      \ "spec/factories/*.rb": {
+      \   "command":   "factory",
+      \   "affinity":  "collection",
+      \   "alternate": "app/models/%i.rb",
+      \   "related":   "db/schema.rb#%s",
+      \   "test":      "spec/models/%i_test.rb",
+      \   "template":  "FactoryGirl.define do\n  factory :%i do\n  end\nend",
+      \   "keywords":  "factory sequence"
+      \ },
+      \ "spec/features/*.feature": {
+      \   "command":   "feature",
+      \   "alternate": "spec/steps/%i_steps.rb",
+      \   "template":  "Feature: %h\n  @%i\n  Scenario:",
+      \ },
+      \ "spec/steps/*_steps.rb": {
+      \   "command":   "step",
+      \   "alternate": "spec/features/%i.feature",
+      \   "template":  " steps_for :%i do\n  step \"\" do ||\n  end\nend",
+      \ }
+      \}
