@@ -62,21 +62,23 @@ set shiftwidth=2
 set colorcolumn=80
 nnoremap <Space>. :<C-u>edit $MYVIMRC<Enter>
 nnoremap <Space>m. :<C-u>source $MYVIMRC<Enter>
-nnoremap <C-Up> gT
-nnoremap <C-Down> gt
 nmap <Leader>c <Plug>(caw:i:toggle)
 vmap <Leader>c <Plug>(caw:i:toggle)
 highlight multiple_cursors_cursor term=reverse cterm=reverse gui=reverse
 highlight link multiple_cursors_visual Visual
 au BufRead,BufNewFile *.md set filetype=markdown
 
+" for vim-dispatch
+command C Copen
+
 " vim-rspec mappings
 let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "Dispatch rspec {spec}"
+nmap <Leader>c :call RunCurrentSpecFile()<CR>
+nmap <Leader>n :call RunNearestSpec()<CR>
+nmap <Leader>l :call RunLastSpec()<CR>
+nmap <Leader>a :call RunAllSpecs()<CR>
+nmap <Leader>m :Dispatch rspec %<CR>
 
 set foldmethod=syntax
 set foldlevel=99
