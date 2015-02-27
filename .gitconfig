@@ -1,8 +1,6 @@
 [user]
 	name = tarky
 	email = taisuke.araki@gmail.com
-[credential]
-	helper = osxkeychain
 [color]
 	ui = auto
 [core]
@@ -17,3 +15,5 @@
 	co = checkout
 	br = branch
 	ci = commit
+[include]
+	path = ~/.gitconfig.local
