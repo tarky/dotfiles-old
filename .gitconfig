@@ -1,6 +1,3 @@
-[user]
-	name = tarky
-	email = taisuke.araki@gmail.com
 [color]
 	ui = auto
 [core]
@@ -16,4 +13,4 @@
 	br = branch
 	ci = commit
 [include]
-	path = ~/.gitconfig.local
+	path = ~/.gitconfig_local
