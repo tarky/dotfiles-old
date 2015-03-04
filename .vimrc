@@ -110,6 +110,9 @@ map t8 8gt
 map t9 9gt
 map t0 :tablast<CR>
 
+"open ctag in new tab
+nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
+
 "for neocomplete
 let g:neocomplete#enable_at_startup = 1
 
