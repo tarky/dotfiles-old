@@ -34,6 +34,7 @@ set guifont=Monaco:h18
  NeoBundle 'plasticboy/vim-markdown'
  NeoBundle 'kannokanno/previm'
  NeoBundle 'tyru/open-browser.vim'
+ NeoBundle 'othree/html5.vim'
  NeoBundle 'slim-template/vim-slim'
  NeoBundle 'mileszs/ack.vim'
  NeoBundle 'soramugi/auto-ctags.vim'
