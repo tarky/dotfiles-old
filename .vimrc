@@ -38,6 +38,7 @@ set guifont=Monaco:h18
  NeoBundle 'slim-template/vim-slim'
  NeoBundle 'mileszs/ack.vim'
  NeoBundle 'soramugi/auto-ctags.vim'
+ NeoBundle 'sbl/scvim'
  " Refer to |:NeoBundle-examples|.
  " Note: You don't set neobundle setting in .gvimrc!
 
