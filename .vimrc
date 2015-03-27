@@ -115,6 +115,9 @@ map t0 :tablast<CR>
 "open ctag in new tab
 nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
 
+set mouse=a
+set wildmenu
+
 "for neocomplete
 let g:neocomplete#enable_at_startup = 1
 
